@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
+
     <title>Document</title>
 </head>
 
@@ -33,10 +35,10 @@
     </section>
     <section class="quem-somos">
         <div class="container">
-            <figure>
+            <div>
                 <img src="img/dentista_andre_carvalho.webp" alt="">
                 <figcaption>Dr. André Carvalho</figcaption>
-            </figure>
+            </div>
             <div class="sobre">
                 <h2>
                     Tecnologia de ponta a serviço do seu sorriso
@@ -58,9 +60,36 @@
             <h2>Nossos Serviços</h2>
             <p>De cuidados preventivos a soluções avançadas, nossa equipe está pronta para atender todas as suas
                 necessidades odontológicas. <span> Escolha seu serviço abaixo.</span></p>
-            <div class="cards">
-                <div class="card"></div>
+            <div class="swiper swiper1">
+                <div class="swiper-wrapper cards">
+                    <div class="swiper-slide card">
+                        <h2>Check-up Odontológico</h2>
+                        <p>Exames de rotina e avaliações gerais da saúde bucal .</p>
+                    </div>
+                    <div class="swiper-slide card">
+                        <h2>Clareamento Dental</h2>
+                        <p>Procedimentos para branqueamento dos dentes, realçando o sorriso. </p>
+                    </div>
+                    <div class="swiper-slide card">
+                        <h2>Ortodontia</h2>
+                        <p>Correção do alinhamento dos dentes  com aparelhos fixos e móveis.</p>
+                    </div>
+                    <div class="swiper-slide card">
+                        <h2>Implantes Dentários</h2>
+                        <p>Substituição de dentes perdidos com implantes de titânio.</p>
+                    </div>
+                    <div class="swiper-slide card">
+                        <h2>Próteses Dentárias</h2>
+                        <p>Próteses parciais e totais para reposição de dentes.</p>
+                    </div>
+                    <div class="swiper-slide card">
+                        <h2>Tratamento de Canal</h2>
+                        <p>Tratamentos para salvar dentes com infecção ou danos na raiz.</p>
+                    </div>
+                </div>
+                
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <section class="agende">
@@ -77,6 +106,155 @@
             </div>
         </div>
     </section>
+    <section class="depoimentos">
+        <div class="container">
+            <h2>O que nossos pacientes dizem</h2>
+            <div class="swiper swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="depoimento">
+                            <p>"Minha experiência na clínica foi excepcional. Desde o atendimento inicial até o final do
+                                tratamento, a equipe foi extremamente profissional e atenciosa. Meu clareamento dental
+                                superou minhas expectativas e o resultado ficou maravilhoso!”</p>
+                            <span>Claudio Silva</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="depoimento">
+                            <p>"Minha experiência na clínica foi excepcional. Desde o atendimento inicial até o final do
+                                tratamento, a equipe foi extremamente profissional e atenciosa. Meu clareamento dental
+                                superou minhas expectativas e o resultado ficou maravilhoso!”</p>
+                            <span>Claudio Silva</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="depoimento">
+                            <p>"Minha experiência na clínica foi excepcional. Desde o atendimento inicial até o final do
+                                tratamento, a equipe foi extremamente profissional e atenciosa. Meu clareamento dental
+                                superou minhas expectativas e o resultado ficou maravilhoso!”</p>
+                            <span>Claudio Silva</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="depoimento">
+                            <p>"Minha experiência na clínica foi excepcional. Desde o atendimento inicial até o final do
+                                tratamento, a equipe foi extremamente profissional e atenciosa. Meu clareamento dental
+                                superou minhas expectativas e o resultado ficou maravilhoso!”</p>
+                            <span>Claudio Silva</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <section class="contato">
+        <div class="container">
+            <div>
+                <h1>
+                    A melhor clínica odontológica do Rio
+                </h1>
+                <h3>Endereço</h3>
+                <p>Av. Rio Branco, 185 - Sala 308 - Centro - Rio de Janeiro</p>
+                <h3 class="contatoH3">Horário de atendimento</h3>
+                <ul>
+                    <li>Seg a Sex: 9:00 às 17:00
+                    </li>
+                    <li>Sáb: 9:00 às 12:00</li>
+                </ul>
+                <h3 class="contatoH3">Ligue pra gente</h3>
+                <ul>
+                    <li>(21) 2266-1234
+                    </li>
+                    <li>(21) 99897-4321</li>
+                </ul>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7350.31333946166!2d-43.1764469!3d-22.9075915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f606f39cb1d%3A0x3546ec8927211c05!2sAv.%20Rio%20Branco%2C%20185%20-%20sala%20308%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020040-007!5e0!3m2!1spt-BR!2sbr!4v1782369707786!5m2!1spt-BR!2sbr"
+                    width="546" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div>
+                <p>OdontoRio, cuidando do seu sorriso há mais de 10 anos</p>
+            </div>
+            <div class="socials">
+                <a href=""><img src="img/whatsapp.webp" alt=""></a>
+                <a href=""><img src="img/instagram.webp" alt=""></a>
+                <a href=""><img src="img/twitter.webp" alt=""></a>
+            </div>
+        </div>
+    </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script>
+    const swiper1 = new Swiper('.swiper1', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        spaceBetween: 14,
+        slidesPerView: 1,
+        initialSlide: 0,
+        mousewheel: true,
+        grabCursor: true,
+        longSwipes: false,
+        speed: 1000,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+            clickable: true,
+            dynamicMainBullets: 3,
+        },
+        hashNavigation: {
+            watchState: true,
+        },
+        mousewheel: {
+            enabled: true,
+        },
+        breakpoints: {
+            // when window width is >= 768px
+            545: {
+                slidesPerView: 1.5,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 5,
+            },
+            920: {
+                slidesPerView: 2.5,
+            },
+            1114: {
+                slidesPerView: 3,
+                initialSlide: 1,
+                spaceBetween: 24,
+                centeredSlides: true,
+            }
+        },
+    });
+    const swiper2 = new Swiper('.swiper2', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1,
+        mousewheel: true,
+        speed: 1000,
+        effect: "cube",
+        cubeEffect: {
+            shadow: false,
+            slideShadows: false,
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
 
 </html>

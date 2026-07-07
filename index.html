@@ -17,15 +17,20 @@
     <header>
         <div class="container">
             <div><img src="img/logo (1).webp" alt=""></div>
-            <nav>
-                <a href="#">Início</a>
-                <a href="#">Quem Somos</a>
-                <a href="#">Nossos Serviços</a>
-                <a href="#">Fale Conosco</a>
+            <div class="btn-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="menu">
+                <a class="link" href="#inicio">Início</a>
+                <a class="link" href="#quem-somos">Quem Somos</a>
+                <a class="link" href="#servicos">Nossos Serviços</a>
+                <a class="link" href="#contato">Fale Conosco</a>
             </nav>
         </div>
     </header>
-    <section class="hero">
+    <section class="hero" id="inicio">
         <div class="container">
             <h2>Responsável Dr. André Carvalho</h2>
             <h3>Seu sorriso é a nossa motivação!</h3>
@@ -33,7 +38,7 @@
             <a class="btn" href="">Agende uma consulta</a>
         </div>
     </section>
-    <section class="quem-somos">
+    <section class="quem-somos" id="quem-somos">
         <div class="container">
             <div>
                 <img src="img/dentista_andre_carvalho.webp" alt="">
@@ -51,11 +56,12 @@
                     Estamos comprometidos em oferecer o melhor cuidado para o seu sorriso. Venha experimentar a
                     diferença que a inovação pode fazer na sua saúde bucal.
                 </p>
-                <a class="btn" href="">Agende uma consulta</a>
+                <a class="btn btn1" href="">Agende uma consulta</a>
+                <a class="btn btn2" href="">Conheça nossas instalações</a>
             </div>
         </div>
     </section>
-    <section class="servicos">
+    <section class="servicos" id="servicos">
         <div class="container">
             <h2>Nossos Serviços</h2>
             <p>De cuidados preventivos a soluções avançadas, nossa equipe está pronta para atender todas as suas
@@ -99,6 +105,7 @@
                 <p><span>Não perca tempo!</span> Agende sua consulta e comece a cuidar do seu sorriso hoje mesmo. Nossa
                     equipe está pronta para receber você com atenção e dedicação. </p>
                 <a class="btn" href="">Quero fazer uma avaliação</a>
+                
             </div>
             <div class="mulher">
                 <img src="img/retrato_de_mulher_europeia_feliz_com_sorriso_largo_fecha_os_olhos_sente_empolgacao_esta_em_alta_1.webp"
@@ -149,7 +156,7 @@
             </div>
         </div>
     </section>
-    <section class="contato">
+    <section class="contato" id="contato">
         <div class="container">
             <div>
                 <h1>
@@ -170,8 +177,8 @@
                     <li>(21) 99897-4321</li>
                 </ul>
             </div>
-            <div class="map">
-                <iframe
+            <div class="mapa">
+                <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7350.31333946166!2d-43.1764469!3d-22.9075915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f606f39cb1d%3A0x3546ec8927211c05!2sAv.%20Rio%20Branco%2C%20185%20-%20sala%20308%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020040-007!5e0!3m2!1spt-BR!2sbr!4v1782369707786!5m2!1spt-BR!2sbr"
                     width="546" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -191,6 +198,7 @@
         </div>
     </footer>
 </body>
+<script src="js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 <script>
     const swiper1 = new Swiper('.swiper1', {

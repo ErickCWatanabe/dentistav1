@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --Brand: #20AD96;
     --BrandDark: #028176;
@@ -11,7 +15,7 @@
     --bgcolor: #FFFFFF;
     --text2: #FFFFFF;
     --sm: 16px;
-    --md: 32px;
+    --md: 36px;
     --lg: 64px;
     --xl: 128px;
     --linear: linear-gradient(to right, #028176, #20AD96);
@@ -114,7 +118,7 @@ header a:hover {
     height: 100vh;
     background-image: url(../img/background_hero.webp);
     background-size: cover;
-    background-position: top right;
+    background-position: top center;
     color: var(--text2);
     display: flex;
     align-items: center;
@@ -150,6 +154,10 @@ header a:hover {
 .quem-somos {
     padding-top: var(--padding);
     padding-bottom: var(--padding);
+}
+
+.quem-somos p {
+    color: var(--text);
 }
 
 .quem-somos .container {
@@ -215,7 +223,8 @@ header a:hover {
 }
 
 .agende .container {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
     position: relative;
 }
 
@@ -329,19 +338,167 @@ footer p {
 .servicos .container {
     position: relative;
 }
-.card{
+
+.card {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.card h2{
+
+.card h2 {
     font-size: 24px;
     color: var(--Brand);
     margin-bottom: 28px;
 }
-.card p{
+
+.card p {
     color: var(--text);
     margin-bottom: 0px;
     padding: 0 25px;
+}
+
+
+.btn-menu .bar {
+    transition: 0.4s;
+}
+
+.btn-menu.menuOn .bar:first-child {
+    transform: translateY(6px) rotate(45deg);
+
+}
+
+.btn-menu.menuOn .bar:nth-child(2) {
+    transform: translateX(-100px);
+    background-color: transparent;
+    /*opacity:0*/
+}
+
+.btn-menu.menuOn .bar:last-child {
+    transform: translateY(-6px)rotate(-45deg);
+}
+
+.d-none {
+    display: none;
+}
+
+.btn2 {
+    display: none;
+}
+
+@media (max-width:1140px) {
+    .container {
+        box-sizing: border-box;
+        padding-left: var(--sm);
+        padding-right: var(--sm);
+    }
+
+    .btn-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mulher {
+        display: none;
+    }
+
+    .menu {
+        transform: translateX(-100%);
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--Brand);
+        z-index: 999999;
+        left: 0;
+        top: 101px;
+        width: 100%;
+        height: 100vh;
+        transition: 0.5s;
+
+        text-align: center;
+    }
+
+    .menuOpen {
+        transform: translateX(0);
+
+    }
+
+    .hero {
+        height: auto;
+        min-height: 600px;
+    }
+
+    .menu a {
+        padding: var(--md) 12px;
+        border-bottom: 3px solid var(--BrandLight);
+        color: var(--BrandLight);
+    }
+
+    .bar {
+        height: 3px;
+        width: 40px;
+        margin-bottom: 3px;
+        background-color: var(--Brand);
+
+    }
+}
+
+@media (max-width:768px) {
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size:var(--md);
+    }
+
+    .mulher{
+        max-width: 100%;
+        width: auto;
+    }
+    .mapa,
+    iframe {
+        max-width: 100%;
+        width: 100%;
+    }
+
+
+    .quem-somos .container {
+        display: flex;
+        flex-direction: column;
+        gap: var(--md);
+    }
+
+    .btn2 {
+        display: inline-block;
+    }
+
+    .btn1 {
+        display: none;
+    }
+
+    .depoimentos h2 {
+        font-size: 28px;
+    }
+
+    .depoimentos p {
+        font-size: var(--sm);
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .contato .container {
+        display: flex;
+        flex-direction: column;
+        gap: var(--md);
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: var(--swiper-navigation-top-offset, 30%) !important;
+    }
+      footer .container{
+        flex-direction: column;
+        row-gap: var(--md);
+    }
 }

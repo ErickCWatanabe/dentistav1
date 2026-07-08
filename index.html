@@ -41,7 +41,7 @@
     <section class="quem-somos" id="quem-somos">
         <div class="container">
             <div>
-                <img src="img/dentista_andre_carvalho.webp" alt="">
+                <img class="dentista" src="img/dentista_andre_carvalho.webp" alt="">
                 <figcaption>Dr. André Carvalho</figcaption>
             </div>
             <div class="sobre">
@@ -204,13 +204,10 @@
     const swiper1 = new Swiper('.swiper1', {
         // Optional parameters
         direction: 'horizontal',
-        loop: true,
         spaceBetween: 14,
         slidesPerView: 1,
-        initialSlide: 0,
         mousewheel: true,
         grabCursor: true,
-        longSwipes: false,
         speed: 1000,
         // If we need pagination
         pagination: {
@@ -218,9 +215,6 @@
             dynamicBullets: true,
             clickable: true,
             dynamicMainBullets: 3,
-        },
-        hashNavigation: {
-            watchState: true,
         },
         mousewheel: {
             enabled: true,
@@ -239,9 +233,7 @@
             },
             1114: {
                 slidesPerView: 3,
-                initialSlide: 1,
                 spaceBetween: 24,
-                centeredSlides: true,
             }
         },
     });

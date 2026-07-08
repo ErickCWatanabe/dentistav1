@@ -392,7 +392,9 @@ footer p {
         padding-left: var(--sm);
         padding-right: var(--sm);
     }
-
+    iframe{
+        width: 500px;
+    }
     .btn-menu {
         display: flex;
         flex-direction: column;
@@ -451,16 +453,15 @@ footer p {
     h4 {
         font-size:var(--md);
     }
-
-    .mulher{
+    .hero h3{
+        font-size: 36px;
+    }
+    .dentista{
         max-width: 100%;
         width: auto;
     }
-    .mapa,
-    iframe {
-        max-width: 100%;
-        width: 100%;
-    }
+    .mapa, iframe{
+        width: 100%;}
 
 
     .quem-somos .container {
@@ -476,7 +477,9 @@ footer p {
     .btn1 {
         display: none;
     }
-
+    .servicos p{
+        padding: 0px;
+    }
     .depoimentos h2 {
         font-size: 28px;
     }
